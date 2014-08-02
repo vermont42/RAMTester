@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yap-m1-SoP">
+                                <rect key="frame" x="126" y="225" width="69" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Dictionary">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="testDictionary" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ExR-7q-dYb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wHa-uK-Zss">
+                                <rect key="frame" x="144" y="285" width="32" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Data">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="testData" destination="vXZ-lx-hvc" eventType="touchUpInside" id="4Bs-RH-XB6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WUR-ES-rLt">
+                                <rect key="frame" x="142" y="165" width="37" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Array">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="testArray" destination="vXZ-lx-hvc" eventType="touchUpInside" id="dgx-ev-Ju7"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Running..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0cf-3E-NRh">
+                                <rect key="frame" x="121" y="439" width="78" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AuX-bT-oHh">
+                                <rect key="frame" x="125" y="105" width="71" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Combined">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="testCombined" destination="vXZ-lx-hvc" eventType="touchUpInside" id="xfI-pv-jqx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Yap-m1-SoP" firstAttribute="top" secondItem="WUR-ES-rLt" secondAttribute="bottom" constant="30" id="1dn-Nx-kgt"/>
+                            <constraint firstAttribute="centerX" secondItem="WUR-ES-rLt" secondAttribute="centerX" id="Cy0-xp-iLb"/>
+                            <constraint firstItem="WUR-ES-rLt" firstAttribute="top" secondItem="AuX-bT-oHh" secondAttribute="bottom" constant="30" id="KIb-h7-gFr"/>
+                            <constraint firstAttribute="centerX" secondItem="AuX-bT-oHh" secondAttribute="centerX" id="KmO-TY-4yH"/>
+                            <constraint firstItem="wHa-uK-Zss" firstAttribute="top" secondItem="Yap-m1-SoP" secondAttribute="bottom" constant="30" id="Wnb-KD-U7S"/>
+                            <constraint firstAttribute="centerY" secondItem="Yap-m1-SoP" secondAttribute="centerY" id="aAv-2m-TIa"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="0cf-3E-NRh" secondAttribute="bottom" constant="20" id="fI6-CF-eIV"/>
+                            <constraint firstAttribute="centerX" secondItem="Yap-m1-SoP" secondAttribute="centerX" id="glX-ap-iv2"/>
+                            <constraint firstAttribute="centerX" secondItem="wHa-uK-Zss" secondAttribute="centerX" id="ouE-cS-UqJ"/>
+                            <constraint firstAttribute="centerX" secondItem="0cf-3E-NRh" secondAttribute="centerX" id="tUu-X5-cIv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="arrayButton" destination="WUR-ES-rLt" id="Fd3-h8-Oth"/>
+                        <outlet property="combinedButton" destination="kh9-bI-dsS" id="OWb-pk-gZc"/>
+                        <outlet property="dataButton" destination="wHa-uK-Zss" id="auY-1E-AV1"/>
+                        <outlet property="dictButton" destination="Yap-m1-SoP" id="wlU-Nr-2lr"/>
+                        <outlet property="statusLabel" destination="0cf-3E-NRh" id="oq3-NO-FlV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
