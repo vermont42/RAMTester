@@ -90,4 +90,4 @@ How iOS [manages](http://newosxbook.com/articles/MemoryPressure.html) low-memory
 
 [“premature optimization is the root of all evil”](http://c2.com/cgi/wiki?PrematureOptimization)
 
-The other iPhone-app experiment: http://www.iphoneappexperiment.com
+The other [iPhone-app experiment](http://www.iphoneappexperiment.com)
